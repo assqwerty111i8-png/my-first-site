@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="nav"></div>
+
+    <h1 class="center">Мои контакты</h1>
+
+    <p>Почта: matm19201@gmail.com</p>
+    <p>Гитхаб: <a href="https://github.com/mathew77kwerty" target="_blank">github.com/mathew77kwerty</a></p>
+    <p>Телефон: +998 123 456 7890</p>
+
+    <img src="images/programmer.jpg" alt="Программист">
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('nav.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('nav').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

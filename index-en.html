@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="nav-en"></div>
+
+    <h1 class="center">Welcome to my website!</h1>
+
+    <p>This is my first test website.</p>
+    <p>Here will be all the important information.</p>
+    <p>About my projects, websites and so on.</p>
+
+    <img src="images/programmer.jpg" alt="Programmer">
+
+    <div id="footer-en"></div>
+
+    <script>
+        fetch('nav-en.html')
+            .then(r => r.text())
+            .then(data => {
+                const nav = document.getElementById('nav-en');
+                if (nav) nav.innerHTML = data;
+            });
+
+        fetch('footer-en.html')
+            .then(r => r.text())
+            .then(data => {
+                const footer = document.getElementById('footer-en');
+                if (footer) footer.innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

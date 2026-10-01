@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="nav-en"></div>
+
+    <h1 class="center">About me!</h1>
+
+    <p class="center">My name is Matvey. I study at a Ukrainian school.</p>
+    <p class="center">I am 15 years old. I like programming.</p>
+    <p class="center">I love creating new projects. I decided to create websites recently.</p>
+
+    <img src="images/Sites.jpg" alt="Websites">
+
+    <div id="footer-en"></div>
+
+    <script>
+        fetch('nav-en.html')
+            .then(r => r.text())
+            .then(data => {
+                const nav = document.getElementById('nav-en');
+                if (nav) nav.innerHTML = data;
+            })
+            .catch(error => console.error('Error loading nav:', error));
+
+        fetch('footer-en.html')
+            .then(r => r.text())
+            .then(data => {
+                const footer = document.getElementById('footer-en');
+                if (footer) footer.innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+</body>
+</html>

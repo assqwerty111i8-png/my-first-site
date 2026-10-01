@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="nav-en"></div>
+
+    <h1 class="center">Contacts</h1>
+
+    <p>Email: matm19201@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/mathew77kwerty" target="_blank">github.com/mathew77kwerty</a></p>
+    <p>Phone: +998 123 456 7890</p>
+
+    <div id="footer-en"></div>
+
+    <script>
+        fetch('nav-en.html')
+            .then(r => r.text())
+            .then(data => {
+                const nav = document.getElementById('nav-en');
+                if (nav) nav.innerHTML = data;
+            });
+
+        fetch('footer-en.html')
+            .then(r => r.text())
+            .then(data => {
+                const footer = document.getElementById('footer-en');
+                if (footer) footer.innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
