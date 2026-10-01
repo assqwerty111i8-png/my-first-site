@@ -11,9 +11,7 @@ h1 {
 p {
     color: #555;
     line-height: 1.6;
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
+    margin: 10px 0;
 }
 
 img {
@@ -59,12 +57,18 @@ nav a:hover {
 }
 
 .project-card p {
-    margin-top: 0;
-    margin-bottom: 18px;
+    color: #555;
+    background: transparent;
+    padding: 0;
+    margin: 0 0 18px 0;
 }
 
 .project-card p:last-child {
     margin-bottom: 0;
+}
+
+.project-card strong {
+    color: #222;
 }
 
 
