@@ -13,7 +13,39 @@
     <h1 class="center">My Projects</h1>
 
     <p>I created a Telegram AI bot that gives me new programming tasks every day 😎</p>
-    <p>I created a CS2-themed project where I tried to hack it and uncover passwords, but each time I strengthen the security and make the project better.</p>
+
+    <p>
+        I created a CS2-themed website. Here's what I did:
+    </p>
+
+    <p>
+        <strong>Built:</strong> FastAPI, JWT, password hashing, profiles, inventory, skins, leaderboard.<br>
+        <strong>Tested:</strong> IDOR, access to other users' skins, race conditions, brute-force attacks, JWT reuse.<br>
+        <strong>Fixed:</strong> ownership checks, atomic transfers, rate limiting, account locking, JWT blacklist, DB UNIQUE constraints.
+    </p>
+
+    <p>
+        In this project, I built an API with users, profiles, and skins, and then started testing its security.
+    </p>
+
+    <p>
+        I checked whether it was possible to access other users' data through user_id or skin_id.
+        I found this issue and added ownership checks.
+    </p>
+
+    <p>
+        I also tested skin transfers and simultaneous requests.
+        I added protection against duplicate transfers and race conditions.
+    </p>
+
+    <p>
+        I also tested authentication by sending many incorrect passwords and trying to use JWT after logout.
+        I added rate limiting, account locking, and a JWT blacklist.
+    </p>
+
+    <p>
+        In the end, I first built the API, then found several security issues myself and fixed them.
+    </p>
 
     <div id="footer-en"></div>
 
