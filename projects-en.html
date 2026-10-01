@@ -12,27 +12,56 @@
 
     <h1 class="center">My Projects</h1>
 
-    <p>I created a Telegram AI bot that gives me new programming tasks every day 😎</p>
+    <p>
+        I created a Telegram AI bot that gives me new programming tasks
+        every day 😎
+    </p>
 
-    <div>
-        I created a CS2-themed website. Here's what I did:<br><br>
+    <div class="project-card">
 
-        <strong>Built:</strong> FastAPI, JWT, password hashing, profiles, inventory, skins, leaderboard.<br>
-        <strong>Tested:</strong> IDOR, access to other users' skins, race conditions, brute-force attacks, JWT reuse.<br>
-        <strong>Fixed:</strong> ownership checks, atomic transfers, rate limiting, account locking, JWT blacklist, DB UNIQUE constraints.<br><br>
+        <p>
+            I created a CS2-themed website. Here's what I did:
+        </p>
 
-        In this project, I built an API with users, profiles, and skins, and then started testing its security.<br><br>
+        <p>
+            <strong>Built:</strong> FastAPI, JWT, password hashing,
+            profiles, inventory, skins, leaderboard.<br>
 
-        I checked whether it was possible to access other users' data through user_id or skin_id.
-        I found this issue and added ownership checks.<br><br>
+            <strong>Tested:</strong> IDOR, access to other users' skins,
+            race conditions, brute-force attacks, JWT reuse.<br>
 
-        I also tested skin transfers and simultaneous requests.
-        I added protection against duplicate transfers and race conditions.<br><br>
+            <strong>Fixed:</strong> ownership checks, atomic transfers,
+            rate limiting, account locking, JWT blacklist,
+            DB UNIQUE constraints.
+        </p>
 
-        I also tested authentication by sending many incorrect passwords and trying to use JWT after logout.
-        I added rate limiting, account locking, and a JWT blacklist.<br><br>
+        <p>
+            In this project, I built an API with users, profiles, and skins,
+            and then started testing its security.
+        </p>
 
-        In the end, I first built the API, then found several security issues myself and fixed them.
+        <p>
+            I checked whether it was possible to access other users' data
+            through user_id or skin_id. I found this issue and added
+            ownership checks.
+        </p>
+
+        <p>
+            I also tested skin transfers and simultaneous requests.
+            I added protection against duplicate transfers and race conditions.
+        </p>
+
+        <p>
+            I also tested authentication by sending many incorrect passwords
+            and trying to use JWT after logout. I added rate limiting,
+            account locking, and a JWT blacklist.
+        </p>
+
+        <p>
+            In the end, I first built the API, then found several security
+            issues myself and fixed them.
+        </p>
+
     </div>
 
     <div id="footer-en"></div>
@@ -42,7 +71,10 @@
             .then(r => r.text())
             .then(data => {
                 const nav = document.getElementById('nav-en');
-                if (nav) nav.innerHTML = data;
+
+                if (nav) {
+                    nav.innerHTML = data;
+                }
             })
             .catch(error => console.error('Error loading nav:', error));
 
@@ -50,10 +82,12 @@
             .then(r => r.text())
             .then(data => {
                 const footer = document.getElementById('footer-en');
-                if (footer) footer.innerHTML = data;
+
+                if (footer) {
+                    footer.innerHTML = data;
+                }
             })
             .catch(error => console.error('Error loading footer:', error));
-
     </script>
 
 </body>
