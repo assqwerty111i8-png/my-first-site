@@ -11,7 +11,9 @@ h1 {
 p {
     color: #555;
     line-height: 1.6;
-    margin: 10px 0;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 img {
@@ -44,31 +46,23 @@ nav a:hover {
 }
 
 
-/* ===== PROJECT CARD ===== */
+/* ===== CS2 PROJECT ===== */
 
-.project-card {
+.cs2-project {
     background: white;
-    padding: 25px;
-    margin: 25px auto;
-    max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
-.project-card p {
-    color: #555;
-    background: transparent;
+.cs2-project p {
+    background: none;
     padding: 0;
-    margin: 0 0 18px 0;
+    margin: 0 0 20px 0;
 }
 
-.project-card p:last-child {
+.cs2-project p:last-child {
     margin-bottom: 0;
-}
-
-.project-card strong {
-    color: #222;
 }
 
 
